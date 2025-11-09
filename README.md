@@ -44,7 +44,7 @@ If you prefer running scripts directly on your host without Docker:
 📥 Clone the repository
 
 ```bash
-git clone https://github.com/Mstr-Creta/system-suite.git
+git clone https://github.com/Mstr-Creta/system_suite.git
 cd system-suite
 ```
 

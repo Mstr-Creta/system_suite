@@ -36,4 +36,43 @@ docker run --rm -it \
   -v /:/host:ro \
   -v /var/run/docker.sock:/var/run/docker.sock \
   YOUR_DOCKERHUB_USERNAME/system-suite
+```
 
+
+## ⚙️ Manual Installation (Native)
+If you prefer running scripts directly on your host without Docker:
+📥 Clone the repository
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/system-maintenance-suite.git
+cd system-maintenance-suite
+```
+
+## 🔐 Make scripts executable
+```
+chmod +x *.sh
+```
+
+## 🚀 Run the suite
+#### Sudo is recommended for full monitoring and update capabilities
+```
+sudo ./main.sh
+```
+
+## 📂 Project Structure
+
+```bash
+system_suite/
+├── main.sh            # 🎮 Main Controller (Menu Interface)
+├── backup.sh          # 📦 Backup Module
+├── update.sh          # 🔄 APT Update & Cleanup Module
+├── monitor.sh         # 📊 Deep System & Log Monitoring Module
+└── Dockerfile         # 🐳 Docker Image Configuration
+```
+
+
+# 🤝 Contributing
+Contributions, bug reports, and feature requests are welcome!
+
+# 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
